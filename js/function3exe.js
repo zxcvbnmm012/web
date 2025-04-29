@@ -9,7 +9,7 @@ function max(num1, num2){
   }
 }
 
-max(10,7);
+max(10,7); // 기능호출
 
 
 // 2. function sumUpTo(5) -> "1부터 5까지의 합은 15입니다"

@@ -20,35 +20,25 @@
 <body>
   <!-- HTML 주석문. -->
   <div id="show">
-    <input type="text" id="userValue" value="김민규"> <!--input값을 쉽게 읽어오려면 id값 부여-->
+    <input type="text" id="userValue" > <!--input값을 쉽게 읽어오려면 id값 부여-->
+    <button id = "searchBtn" class = "btn btn-primary">조회</button>
+    <select id = "selectGender" class="form-control">
+      <option value="All">전체</option>
+      <option value="Male">남자</option>
+      <option value="Female">여자</option>
+    </select>
+    <!--
     <p>
       <input type="next" id="num1" value="30"> + 
       <input type="next" id="num2" value="17"> =
       <input type="next" id="result" value="">
-    </p> <!--<p>태그는 block레벨-->
+    </p> <p>태그는 block레벨-->
   </div>
 
-  <table border ="3">
-    <tbody>
-      <tr>
-        <td>first</td>
-        <td>second</td>
-        <td>third</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>*</td>
-        <td>5</td>
-        <td>=</td>
-        <td>15</td>
-      </tr>
-    </tbody>
-  </table>
 
-  <script src="js/function3exe.js"></script> <!--variable1.js에 저장된 script를 읽어온다-->
-  <script>
+  <script src="js/jsonData.js"></script> <!--variable1.js에 저장된 script를 읽어온다-->
+  <script src="js/function8.js"></script>
+  <!-- 두개의 파일을 선언하면 파일만 다를뿐 공동영역에서 수행한다-->
 
-   
-  </script>
 </body>
 </html>
