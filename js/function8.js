@@ -12,7 +12,9 @@ console.clear();
 
 // button<삭제> 템플릿
 let btnTemplate = "<button class ='btn btn-danger' onclick='deleteTr(event)'>삭제</button>";
+
 function deleteTr(parameter){
+  //console.log(parameter);
   console.dir(parameter.target.parentElement.parentElement);
   // console.dir() : 객체의 속성을 console에 출력 -> parameter1의 속성을 확인
   // parameter1.target : button -> 이벤트가 일어날 객체
@@ -36,7 +38,7 @@ for (let emp of data){ // 배열의 수만큼만 반복
 let fields = ['id', 'first_name', 'gender', 'email', 'salary'];
 
 // 사원목록(table형식)을 출력
-let elist = "<table class = 'table'><thead><tr>";
+let elist = "<table class='table'><thead><tr>"; // table class='table' ; 속성 -> 붙여쓰기
 for (let field of fields){
   elist += `<th>${field}</th>`;
 }
@@ -77,6 +79,7 @@ document.querySelector('select.form-control').addEventListener('change', functio
   let slist = "";
   let searchValue = document.querySelector('#selectGender').value; // searchValue : select 태그의 value 값을 넣어줌
   console.log(searchValue);
+  console.log(this);
   for(let emp of data){
     if (searchValue == 'All' || searchValue == emp.gender){
       slist += makeTr(emp);
